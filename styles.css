@@ -132,11 +132,6 @@ body {
     box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4); /* Returns to original glow */
 }
 
-/* Smooth transition for hover and active states */
-.cta-button, .cta-button:active, .cta-button:hover {
-    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-}
-
 /* Footer Section */
 .footer {
     font-size: 16px;
