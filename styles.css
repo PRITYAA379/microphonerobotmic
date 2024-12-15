@@ -1,0 +1,243 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #87CEEB, #B0E0E6); /* Sky Blue Gradient */
+    text-align: center;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    padding: 40px 0;
+    background-color: #87CEEB;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Reflective Text for Product Name */
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 15px rgba(0, 0, 0, 0.3);
+    color: #000;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.header h1::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Subheading Text */
+.header p {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Section */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Product Image Styles */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Poetic Product Name Styles */
+.product-name {
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #6A1B9A; /* Deep Purple */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Price Styling */
+.product-price {
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #6A1B9A;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Old Price (Strikethrough Style) */
+.old-price {
+    font-size: 20px;
+    font-weight: normal;
+    color: #B0BEC5;
+    text-decoration: line-through;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+/* Dreamy 'Buy Now' Button Styling */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Soft Dreamy Gradient */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 50px; /* Rounded corners for softness */
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4); /* Soft glow effect */
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #ffc3a0, #ffafbd); /* Reverse gradient on hover */
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6); /* Glow becomes more intense */
+    transform: scale(1.1); /* Grows slightly to give a dreamy effect */
+}
+
+.cta-button:active {
+    transform: scale(1); /* Returns to normal size when clicked */
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4); /* Returns to original glow */
+}
+
+/* Smooth transition for hover and active states */
+.cta-button, .cta-button:active, .cta-button:hover {
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Footer Section */
+.footer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-us-title {
+    font-size: 36px;
+    color: #6A1B9A;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 28px;
+    color: #6A1B9A;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Text Content */
+.about-us-text {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Strong emphasis on key phrases */
+strong {
+    color: #FF4081;
+    font-weight: 600;
+}
+
+/* Styling for Hover on Entire Section */
+.about-us-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+    .product-name {
+        font-size: 18px;
+    }
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 40px 15px;
+    }
+
+    .about-us-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .about-us-text {
+        font-size: 18px;
+    }
+}
+
+/* Add Google Fonts (Merriweather, Dancing Script) */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:wght@700&display=swap');
